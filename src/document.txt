@@ -1,0 +1,4 @@
+if you missing node_module : run npm install
+type emmit in vscode setting then go emit included language and then write js = jsreact
+sfc = stateless function
+inline style: style={{ color: "white, backgroundColor}}
