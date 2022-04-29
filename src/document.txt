@@ -9,3 +9,7 @@ to pass argument on fire action u need to wrap into annymous function
 
 USeState:
 if something will change on time. use it.
+
+id and key:
+use id for list in react
+and id for Dom 
