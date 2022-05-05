@@ -13,3 +13,12 @@ if something will change on time. use it.
 id and key:
 use id for list in react
 and id for Dom 
+
+#11 props.
+they make easy to use content again.
+
+<NameofPage, propName= name> // send prop
+const nameofPage = ({ destruction the object})
+
+#12 filter function: fires a callback function in each item of array. if return true it keeps element and if not it filter out
+#13 delete blog using id and filter. and handledelete function should same page as blog  because that where it iniated. This example how to pass function as prop
