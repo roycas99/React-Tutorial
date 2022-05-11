@@ -21,4 +21,11 @@ they make easy to use content again.
 const nameofPage = ({ destruction the object})
 
 #12 filter function: fires a callback function in each item of array. if return true it keeps element and if not it filter out
-#13 delete blog using id and filter. and handledelete function should same page as blog  because that where it iniated. This example how to pass function as prop
+
+#13 useffect
+it fire every  renders. good for data fetch. inside this hook we can access state component but do not do any change in state .it manages side-effect in functional react component.
+if func component makes calculations that don't target the output value, then these calculations are named side-effects.
+Examples of side-effects are fetch requests, manipulating DOM directly, using timer functions like setTimeout(), and more.
+Put your side-effect logic into the callback function, then use the dependencies argument to control when you want the side-effect to run. 
+qThat's the sole purpose of useEffect().
+
