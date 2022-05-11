@@ -29,3 +29,14 @@ Examples of side-effects are fetch requests, manipulating DOM directly, using ti
 Put your side-effect logic into the callback function, then use the dependencies argument to control when you want the side-effect to run. 
 qThat's the sole purpose of useEffect().
 
+#15 use Effect dependencies
+empty array = runs only one
+[prop] = can be dependencies
+
+# 16 & 17 Json server and fetching data 
+to run: npx json-server --watch data/db.json --port 8000
+end points: /blog GET = fetch all blogs
+/blog/{id} Get - fetch a single blog
+
+ {blogs && <BlogList  blogs={blogs} title="All blogs" handleDelete={handleDelete}/>} -- and conditinal if blog false dont bother other one 
+ we get rid off handleDelete function.

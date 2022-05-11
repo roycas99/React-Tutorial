@@ -6,18 +6,20 @@ const Home = () => {
 
  const[blogs,setBlogs] = useState([
         {title:"nightwalker", Author:"Abshir", id:1},
-        {title: "what", Author:"unknow",id:2}
+        {title: "what", author:"unknow",id:2}
       ]);
 
-      const handleDelete = (id) => {
-          const newBlogs = blogs.filter((blog) => blog.id !== id)
-          setBlogs(newBlogs);
+      const [name,setName] = useState("Mario")
 
-      }
+      
 
       useEffect(() => {
-          console.log("122")
-      })
+          fetch('http://localhost:8000/blogs').then((res)=>{
+              return res.json();
+          }).then((data)=>{
+              setBlogs(data)
+          })
+      },[])
 
 // const[name,setName] = useState("Ahmed");
 // const handleClick = (ah) => {
@@ -28,8 +30,10 @@ const Home = () => {
 
     return (  
         <div className="home">
-            <BlogList  blogs={blogs} title="All blogs" handleDelete={handleDelete}/>
-            <BlogList  blogs={blogs.filter((blogs) => blogs.Author === "Abshir")} title="Abshir Blog"/>
+            {blogs && <BlogList  blogs={blogs} title="All blogs" />}
+            {/* <button onClick={() => setName("Abshir")}>Change name </button>
+            <p>{name}</p> */}
+            {/* <BlogList  blogs={blogs.filter((blogs) => blogs.Author === "Abshir")} title="Abshir Blog"/> */}
         </div>
             );
 
