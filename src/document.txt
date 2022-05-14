@@ -59,7 +59,12 @@ it goes node_module.
 dom6: Switch is being replaced by Routers
 tutoriol video is using dom5 but we using dom6
 
-# 22
+# 22 Router Path 
 we  create.js page
 we specif the path of routes by adding "exact" before path"
 
+#23 Router Link
+go to navbar.js and import Link for react router and change a tag to Link
+and href into to .
+this prevent sending request to server everytime we clink the navbar items
+very fast
