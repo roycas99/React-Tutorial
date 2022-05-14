@@ -79,3 +79,6 @@ we gonna use CleanUP and abortController.
 #25 Route Parameters
 use useParam fro router-dom.
 exact path="/blogs/:id" > this :id is router Parameter
+
+# Git 
+to cath user and password use :git config --global credential.helper cache
