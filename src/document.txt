@@ -76,3 +76,6 @@ we got some error bc the page we came from is being unmounted
 and that why cleaup is coming.
 we gonna use CleanUP and abortController.
 
+#25 Route Parameters
+use useParam fro router-dom.
+exact path="/blogs/:id" > this :id is router Parameter
