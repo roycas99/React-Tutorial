@@ -68,3 +68,11 @@ go to navbar.js and import Link for react router and change a tag to Link
 and href into to .
 this prevent sending request to server everytime we clink the navbar items
 very fast
+
+# 24 useEffect CleanUp
+we have to go useFetch page.
+background intro: if we are a page that is fetching data and we go another page
+we got some error bc the page we came from is being unmounted
+and that why cleaup is coming.
+we gonna use CleanUP and abortController.
+
