@@ -40,3 +40,45 @@ end points: /blog GET = fetch all blogs
 
  {blogs && <BlogList  blogs={blogs} title="All blogs" handleDelete={handleDelete}/>} -- and conditinal if blog false dont bother other one 
  we get rid off handleDelete function.
+#18
+we have to show user that data is loading. using isPending and SetIsPending
+#19
+handling errors
+there are many types of erros. like network err for example if server is down, but 
+there is resources error like if the ending point is not exist u throw error and it will catch and display.
+u can use Error USeState to display in screen
+
+#20 making custom hook
+
+we make file to fetch data. pass url to this function. 
+{data: blogs = to name data as blogs}
+
+#21 React Router
+install : npm i react-router-dom
+it goes node_module.
+dom6: Switch is being replaced by Routers
+tutoriol video is using dom5 but we using dom6
+
+# 22 Router Path 
+we  create.js page
+we specif the path of routes by adding "exact" before path"
+
+#23 Router Link
+go to navbar.js and import Link for react router and change a tag to Link
+and href into to .
+this prevent sending request to server everytime we clink the navbar items
+very fast
+
+# 24 useEffect CleanUp
+we have to go useFetch page.
+background intro: if we are a page that is fetching data and we go another page
+we got some error bc the page we came from is being unmounted
+and that why cleaup is coming.
+we gonna use CleanUP and abortController.
+
+#25 Route Parameters
+use useParam fro router-dom.
+exact path="/blogs/:id" > this :id is router Parameter
+
+# Git 
+to cath user and password use :git config --global credential.helper cache
