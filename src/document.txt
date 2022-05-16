@@ -95,3 +95,4 @@ to cath user and password use :git config --global credential.helper cache
  # 30 : redirect using UseHistory
  n react-router-dom v6 useHistory() is replaced by useNavigate().
 
+#31 : Delete Blog.
