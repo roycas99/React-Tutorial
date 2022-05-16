@@ -85,4 +85,10 @@ to cath user and password use :git config --global credential.helper cache
 
 # reusing custom hook
 
-# 29 Controlled input
+# 27Controlled input
+ to go back the last video: ctrl + p
+ # 28
+
+ if you post to json dont give id .
+ # 29 making a Post Request
+
