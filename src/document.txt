@@ -84,3 +84,5 @@ exact path="/blogs/:id" > this :id is router Parameter
 to cath user and password use :git config --global credential.helper cache
 
 # reusing custom hook
+
+# 29 Controlled input
